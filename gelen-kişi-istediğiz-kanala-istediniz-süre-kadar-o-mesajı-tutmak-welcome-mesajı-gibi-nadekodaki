@@ -1,0 +1,7 @@
+client.on('guildMemberAdd', member => {
+    if (member.guild.id !== "swid") return;
+    member.guild.channels.cache.get("karşılama kanal idsi").send(`${member} hoşgeldin!`).then(m => {
+        setTimeout(() => m.delete(), 15000);
+    })
+})
+ 
