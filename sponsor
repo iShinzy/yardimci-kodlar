@@ -1,0 +1,34 @@
+const Discord = require("discord.js");
+const db = require("quick.db");
+
+exports.run = (client, message, params, args) => {
+    const davet = new Discord.MessageEmbed()
+    .setAuthor(`BOTİSMİ | Sponsor`)
+    .setColor('#66c4a6')
+    .setDescription(
+    `\`\`\`Burası Neresimi?\`\`\`
+    **VDS, HOSTING, DOMAIN ALABILECEGIN GUVENILIR BIR YER**
+    **__7/24__ Desteğe Bakan Destek Ekib Ve Saygılı Bir Ekib**
+
+    **Hadi Ne Duruyorsun Sende Ne Duruyorsun Al Bir Sunucu Keyfini Çıkar**
+    
+    **👇SPONSORİSMİ Discord Sunucusu?**
+    [Tıkla ve uzaya çık](https://discord.gg/)
+
+    **👇SPONSORİSMİ WebSite?**
+    [Tıkla ve uzaya çık](https://www.sitelinkleri.com/)`
+)
+    .setThumbnail(client.user.avatarURL())
+    .setImage(`FOTO LİNKİ`)
+message.channel.send(davet)
+};
+
+exports.conf = {
+    enable: true,
+    guildOnly: false,
+    aliases: ["s", "sponsor", "partner"]
+};
+
+exports.help = {
+    name: "sponsor"
+};
