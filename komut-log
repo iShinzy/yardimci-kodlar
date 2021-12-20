@@ -1,0 +1,5 @@
+client.channels.cache.get("kanalID").send(new Discord.MessageEmbed() .setColor("RANDOM") .setThumbnail(message.author.avatarURL({dynamic:true})) 
+.setDescription("**Bir Komut Kullanıldı!** \n\n **Komut İsmi** → ``" + cmd.help.name + "`` \n **Kullanan Kişi** → <@"+message.author.id+"> | ``"+client.users.cache.get(message.author.id).tag+"`` \n **Kullanılan Sunucu** → ``"+message.guild.name+"``")
+)
+
+//**message.js'de if(cmd)'in hemen altına atılacaktır.**
